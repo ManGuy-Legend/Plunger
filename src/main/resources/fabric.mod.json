@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "guioptimizer",
+  "version": "${version}",
+  "name": "Plunger",
+  "description": "Eliminates GUI rendering pipeline flushes for an FPS boost",
+  "authors": [
+    "ManGuy"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/plunger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.manguy.plunger.Plunger"
+    ]
+  },
+  "mixins": [
+    "plunger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  }
+}
